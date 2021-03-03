@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--title-->
+    <title>Janne Fagerström Portfolio</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <!--body-->
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <!--navigation-->
+          <nav class="nav">
+            <ul class="nav__ul">
+              <li class="nav-item"><a href="#about">about</a></li>
+              <li class="nav-item"><a href="#projects">projects</a></li>
+              <li class="nav-item"><a href="#details">details</a></li>
+              <li class="nav-item"><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!--about-->
+        <main class="main">
+          <section id="about" class="section about">
+            <h1 class="section__title title-main">
+              Janne Fagerström Fullstack Developer Portfolio
+            </h1>
+            <p>My name is Janne. I am a fullstack web developer.</p>
+          </section>
+
+          <!--projects-->
+          <section id="projects" class="section projects">
+            <h2 class="section__title">projects</h2>
+            <ul class="projects-list">
+              <!--hpo musicians-->
+              <li class="projects-list__item">
+                <div class="project-card">
+                  <h3 class="project-card__title">
+                    Musicians of Helsinki Philharmonic Orchestra (1882 — 1932)
+                  </h3>
+                  <img class="project-card__image" src="" />
+                  <div class="project-card__buttons">
+                    <button class="button button--demo">
+                      <a
+                        href="https://hpo-history.herokuapp.com/"
+                        target="_blank"
+                        >demo</a
+                      >
+                    </button>
+                    <button class="button button--view">
+                      <a
+                        href="https://github.com/JMFStorm/hpo-historical-musicians"
+                        target="_blank"
+                        >view code</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <!--epoller-->
+              <li class="projects-list__item">
+                <div class="project-card">
+                  <h3 class="project-card__title">ePoller</h3>
+                  <img class="project-card__image" src="" />
+                  <div class="project-card__buttons">
+                    <button class="button button--demo">
+                      <a
+                        href="https://epoller-react-app.herokuapp.com/"
+                        target="_blank"
+                        >demo</a
+                      >
+                    </button>
+                    <button class="button button--view">
+                      <a
+                        href="https://github.com/JMFStorm/ePoller"
+                        target="_blank"
+                        >view code</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--details-->
+          <section id="details" class="section details">
+            <h2 class="section__title">details</h2>
+          </section>
+        </main>
+
+        <!--contact footer-->
+        <footer id="contact" class="footer">
+          <h2 class="title">contact me</h2>
+          <ul class="links-list">
+            <li class="links-list::item">
+              <a href="https://github.com/JMFStorm">Github</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <!--script-->
+  <script src="./js/script.js"></script>
+</html>
