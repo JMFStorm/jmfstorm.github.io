@@ -6,7 +6,9 @@
   "scripts": {
     "watch:ts": "tsc -w",
     "watch:scss": "sass src/scss:src/public/styles --watch",
-    "deploy:git": "rmdir /S docs && Xcopy /s .\\src\\public .\\docs\\ && git add . && git commit -m deploy && git push -u origin master"
+    "create:docs": "rmdir /S docs && Xcopy /s .\\src\\public .\\docs\\",
+    "git:push": "git add . && git commit -m deploy && git push -u origin master",
+    "deploy:git": "npm run create:docs && npm run git:push"
   },
   "keywords": [],
   "author": "Janne Fagerström",
