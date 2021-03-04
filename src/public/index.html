@@ -11,6 +11,12 @@
 
     <!--styles-->
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/e5871f40ed.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <!--body-->
@@ -18,31 +24,36 @@
     <div class="wrapper">
       <div class="container">
         <header class="header">
+          <div class="header__watermark">Janne Fagerström</div>
+
           <!--navigation-->
           <nav class="nav">
             <ul class="nav__ul">
-              <li class="nav-item"><a href="#about">about</a></li>
-              <li class="nav-item"><a href="#projects">projects</a></li>
-              <li class="nav-item"><a href="#details">details</a></li>
-              <li class="nav-item"><a href="#contact">contact</a></li>
+              <li class="nav__li"><a href="#about">about</a></li>
+              <li class="nav__li"><a href="#projects">projects</a></li>
+              <li class="nav__li"><a href="#details">details</a></li>
+              <li class="nav__li"><a href="#contact">contact</a></li>
             </ul>
           </nav>
+
+          <!--hamburger-->
+          <i class="header__hamburger fas fa-bars"></i>
         </header>
 
-        <!--about-->
         <main class="main">
-          <section id="about" class="section about">
-            <h1 class="title title--main">
-              Janne Fagerström Fullstack Developer Portfolio
-            </h1>
-            <p class="about__paragraph">
-              My name is Janne. I am a fullstack web developer.
-            </p>
+          <!--title-->
+          <section id="title" class="section section--title">
+            <div class="section--title__wrapper">
+              <h1 class="section--title__title title">Portfolio</h1>
+              <p class="section--title__paragraph">
+                My name is Janne. I am a fullstack web developer.
+              </p>
+            </div>
           </section>
 
           <!--projects-->
-          <section id="projects" class="section projects">
-            <h2 class="section__title">projects</h2>
+          <section id="projects" class="section section--projects">
+            <h2 class="section__title title">projects</h2>
             <ul class="projects-list">
               <!--hpo musicians-->
               <li class="projects-list__item">
@@ -97,14 +108,14 @@
           </section>
 
           <!--details-->
-          <section id="details" class="section details">
-            <h2 class="section__title">details</h2>
+          <section id="details" class="section section--details">
+            <h2 class="section__title title">details</h2>
           </section>
         </main>
 
         <!--contact footer-->
         <footer id="contact" class="footer">
-          <h2 class="footer__title">contact me</h2>
+          <h2 class="footer__title title">contact me</h2>
           <ul class="links-list">
             <li class="links-list__item">
               <a href="https://github.com/JMFStorm">Github</a>

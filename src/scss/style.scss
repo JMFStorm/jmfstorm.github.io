@@ -94,14 +94,122 @@ video {
 }
 /* end reset */
 
-/* variables_ */
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+$font-sans-serif: "PT Sans", sans-serif;
+$font-serif: "Roboto Slab", serif;
+
+$font-clamp-title-01: clamp(3.6rem, 2.5vw, 6.8rem);
+$font-clamp-text-01: clamp(1.6rem, 1.15vw, 4.2rem);
+
+/* globals */
+.title {
+  font-size: 2.8rem;
+  font-family: $font-serif;
+}
 
 /* html & body */
 html {
   font-size: 62.5%;
 }
 body {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0;
   padding: 0rem;
+  font-family: $font-sans-serif;
+}
+
+/* wrapper & container */
+.wrapper {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* header */
+.header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 1rem;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  .header__watermark {
+    margin-right: auto;
+    font-size: $font-clamp-text-01;
+  }
+  .nav {
+    display: none;
+    .nav__ul {
+      display: flex;
+      flex-direction: row;
+      .nav__li {
+        list-style: none;
+        padding: 0 0.75em;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  .header__hamburger {
+    font-size: 3rem;
+    color: #ebebeb;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 550px) {
+  .header {
+    .nav {
+      display: unset;
+      font-size: $font-clamp-text-01;
+    }
+    .header__hamburger {
+      display: none;
+    }
+  }
+}
+
+/* title section */
+.section--title {
+  color: white;
+  background-image: url("../images/wallpaper-01.jpg");
+  background-size: cover;
+  background-position: 0% 60%;
+  height: 62.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .section--title__wrapper {
+    padding: 0 1rem;
+    margin: auto;
+    margin-top: 20rem;
+    .section--title__title {
+      font-size: $font-clamp-title-01;
+    }
+    .section--title__paragraph {
+      margin-top: 1em;
+      font-size: $font-clamp-text-01;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .section--title {
+    height: clamp(62.5rem, 35vw, 100rem);
+  }
+}
+
+/* projects section */
+.section--projects {
+  .section__title {
+  }
+  .projects-list {
+  }
 }
