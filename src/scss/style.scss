@@ -95,6 +95,7 @@ video {
 
 img {
   max-width: 100%;
+  display: block;
 }
 /* end reset */
 
@@ -107,6 +108,7 @@ $font-serif: "Roboto Slab", serif;
 
 $font-clamp-title-01: clamp(4rem, 2.5vw, 6.8rem);
 $font-clamp-text-01: clamp(1.6rem, 1.15vw, 4.2rem);
+$font-clamp-text-02: clamp(1.6rem, 1.05vw, 2rem);
 
 /* globals */
 .title {
@@ -114,7 +116,7 @@ $font-clamp-text-01: clamp(1.6rem, 1.15vw, 4.2rem);
   text-align: center;
   font-family: $font-serif;
   margin: 4em 0 2em 0;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .section {
@@ -267,7 +269,6 @@ body {
 
 /* projects section */
 .section--projects {
-  max-width: 160rem;
   padding: 0 1rem;
   .projects-list {
     display: flex;
@@ -277,39 +278,42 @@ body {
       list-style: none;
       flex-basis: 100%;
       margin-bottom: 4em;
-
       .project-card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         .project-card__title {
+          font-size: clamp(3rem, 1.15vw, 3.6rem);
           font-weight: 700;
-          font-size: 2.8rem;
+          /* font-size: 2.8rem; */
           text-align: center;
           margin-bottom: auto;
-          height: 6.5rem;
+          /* height: 6.5rem; */
         }
         .title--small {
-          font-size: 2rem;
+          font-size: clamp(2.4rem, 1.05vw, 2.8rem);
         }
         .project-card__figure {
           text-align: center;
           margin: auto;
           padding: 0 1em;
           max-width: 60rem;
+          margin: 1em auto;
           .project-card__image {
-            margin: 1em 0;
             border: solid 1px rgba(0, 0, 0, 0.2);
           }
         }
         .project-card__links {
-          margin-top: auto;
+          /* margin-top: auto; */
+          margin: auto auto 0 auto;
+          width: 100%;
+          max-width: 500px;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: space-around;
           .button {
+            font-size: $font-clamp-text-02;
             flex-basis: 100%;
             max-width: 20rem;
             display: inline-flex;
@@ -318,7 +322,6 @@ body {
             text-decoration: none;
             padding: 0.5em;
             margin: 0.35em auto;
-            font-size: 1.6rem;
             border-radius: 4px;
             box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
             i {
@@ -340,7 +343,26 @@ body {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 550px) {
+  .section--projects {
+    .projects-list {
+      .projects-list__item {
+        .project-card {
+          .project-card__title {
+            height: 6rem;
+          }
+          .project-card__links {
+            .button {
+              flex-basis: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) {
   .section--projects {
     .projects-list {
       .projects-list__item {
@@ -353,6 +375,7 @@ body {
 
 @media (min-width: 1400px) {
   .section--projects {
+    width: max(60%, 1400px);
     .projects-list {
       .projects-list__item {
         flex-basis: 33.33%;
