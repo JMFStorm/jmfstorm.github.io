@@ -122,6 +122,10 @@ $font-clamp-text-01: clamp(1.6rem, 1.15vw, 4.2rem);
   margin: auto;
 }
 
+.hide-nav {
+  display: none;
+}
+
 /* html & body */
 html {
   font-size: 62.5%;
@@ -147,12 +151,16 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
-  padding: 0.5em 1rem;
+  flex-wrap: wrap;
+  /* padding: 0.5em 1rem; */
   background: #1d2327;
   position: fixed;
   width: 100%;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
   .header__watermark {
+    flex-basis: 80%;
+    display: flex;
+    padding: 1em;
     a {
       text-decoration: none;
       color: white;
@@ -161,16 +169,31 @@ body {
       margin: auto auto auto 0;
     }
   }
-  .nav {
-    display: none;
+  .header__hamburger {
+    display: flex;
     margin-left: auto;
-    margin-right: 2.5%;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: #ebebeb;
+    text-align: right;
+    i {
+      margin: auto;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .nav {
+    flex-basis: 100%;
+    font-size: $font-clamp-text-01;
     .nav__ul {
+      padding: 0em 1em 1em 1em;
+      text-align: center;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       .nav__li {
+        margin: 0.5em 0;
         list-style: none;
-        padding: 0 0.75em;
         a {
           text-decoration: none;
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
@@ -179,18 +202,29 @@ body {
       }
     }
   }
-  .header__hamburger {
-    font-size: 2.5rem;
-    color: #ebebeb;
-    margin-left: auto;
-  }
 }
 
 @media (min-width: 650px) {
   .header {
+    .header__watermark {
+      flex-basis: 40%;
+    }
     .nav {
-      display: unset;
-      font-size: $font-clamp-text-01;
+      margin-left: auto;
+      flex-basis: 50%;
+      display: flex;
+      .nav__ul {
+        padding: 1em;
+        flex-direction: row;
+        margin-left: auto;
+        .nav__li {
+          display: flex;
+          margin: 0 1em;
+          a {
+            margin: auto;
+          }
+        }
+      }
     }
     .header__hamburger {
       display: none;
@@ -254,7 +288,7 @@ body {
           font-size: 2.8rem;
           text-align: center;
           margin-bottom: auto;
-          height: 5rem;
+          height: 6.5rem;
         }
         .title--small {
           font-size: 2rem;
@@ -263,6 +297,7 @@ body {
           text-align: center;
           margin: auto;
           padding: 0 1em;
+          max-width: 60rem;
           .project-card__image {
             margin: 1em 0;
             border: solid 1px rgba(0, 0, 0, 0.2);

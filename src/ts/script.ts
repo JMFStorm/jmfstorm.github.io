@@ -1,3 +1,8 @@
-const number: number = 15
+let navOpen: boolean = false;
 
-console.log(number);
+function toggleHamburger() {
+  navOpen = !navOpen;
+  console.log("navOpen", navOpen);
+  const navbar = document.getElementById("nav");
+  navbar?.classList.toggle("hide-nav");
+}
