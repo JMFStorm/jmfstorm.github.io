@@ -28,19 +28,22 @@
             <a href="#main">Janne Fagerström Portfolio</a>
           </div>
 
+          <!--hamburger-->
+          <a
+            onclick="toggleHamburger()"
+            aria-label="toogle-navigation"
+            class="header__hamburger"
+            ><i class="fas fa-bars"></i
+          ></a>
+
           <!--navigation-->
-          <nav class="nav">
+          <nav id="nav" class="nav hide-nav">
             <ul class="nav__ul">
               <li class="nav__li"><a href="#projects">projects</a></li>
               <li class="nav__li"><a href="#details">details</a></li>
               <li class="nav__li"><a href="#contact">contact me</a></li>
             </ul>
           </nav>
-
-          <!--hamburger-->
-          <a aria-label="toogle-navigation" class="header__hamburger"
-            ><i class="fas fa-bars"></i
-          ></a>
         </header>
 
         <main id="main" class="main">
@@ -62,8 +65,7 @@
               <li class="projects-list__item">
                 <div class="project-card">
                   <h3 class="project-card__title title--small">
-                    Musicians of Helsinki Philharmonic Orchestra<br />(1882 —
-                    1932)
+                    Musicians of Helsinki Philharmonic Orchestra (1882 — 1932)
                   </h3>
                   <figure class="project-card__figure">
                     <img
