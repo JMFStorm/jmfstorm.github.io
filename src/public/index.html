@@ -24,7 +24,7 @@
     <div class="wrapper">
       <div class="container">
         <header class="header">
-          <div class="header__watermark">Janne Fagerström</div>
+          <div class="header__watermark">Janne Fagerström Portfolio</div>
 
           <!--navigation-->
           <nav class="nav">
@@ -37,14 +37,16 @@
           </nav>
 
           <!--hamburger-->
-          <i class="header__hamburger fas fa-bars"></i>
+          <a aria-label="toogle-navigation" class="header__hamburger"
+            ><i class="fas fa-bars"></i
+          ></a>
         </header>
 
         <main class="main">
           <!--title-->
           <section id="title" class="section section--title">
             <div class="section--title__wrapper">
-              <h1 class="section--title__title title">Portfolio</h1>
+              <h1 class="section--title__title">Portfolio</h1>
               <p class="section--title__paragraph">
                 My name is Janne. I am a fullstack web developer.
               </p>
@@ -58,25 +60,30 @@
               <!--hpo musicians-->
               <li class="projects-list__item">
                 <div class="project-card">
-                  <h3 class="project-card__title">
-                    Musicians of Helsinki Philharmonic Orchestra (1882 — 1932)
+                  <h3 class="project-card__title title--small">
+                    Musicians of Helsinki Philharmonic Orchestra<br />(1882 —
+                    1932)
                   </h3>
-                  <img class="project-card__image" src="" />
-                  <div class="project-card__buttons">
-                    <button class="button button--demo">
-                      <a
-                        href="https://hpo-history.herokuapp.com/"
-                        target="_blank"
-                        >demo</a
-                      >
-                    </button>
-                    <button class="button button--view">
-                      <a
-                        href="https://github.com/JMFStorm/hpo-historical-musicians"
-                        target="_blank"
-                        >view code</a
-                      >
-                    </button>
+                  <figure class="project-card__figure">
+                    <img
+                      class="project-card__image"
+                      src="./images/hpo.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="project-card__links">
+                    <a
+                      class="button button--demo"
+                      href="https://hpo-history.herokuapp.com/"
+                      target="_blank"
+                      ><span>demo application</span>
+                    </a>
+                    <a
+                      class="button button--git"
+                      href="https://github.com/JMFStorm/hpo-historical-musicians"
+                      target="_blank"
+                      ><span>view on Github</span><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </li>
@@ -85,22 +92,28 @@
               <li class="projects-list__item">
                 <div class="project-card">
                   <h3 class="project-card__title">ePoller</h3>
-                  <img class="project-card__image" src="" />
-                  <div class="project-card__buttons">
-                    <button class="button button--demo">
-                      <a
-                        href="https://epoller-react-app.herokuapp.com/"
-                        target="_blank"
-                        >demo</a
-                      >
-                    </button>
-                    <button class="button button--view">
-                      <a
-                        href="https://github.com/JMFStorm/ePoller"
-                        target="_blank"
-                        >view code</a
-                      >
-                    </button>
+                  <figure class="project-card__figure">
+                    <img
+                      class="project-card__image"
+                      src="./images/poller.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="project-card__links">
+                    <a
+                      class="button button--demo"
+                      href="https://epoller-react-app.herokuapp.com/"
+                      target="_blank"
+                      ><span>demo application</span></a
+                    >
+
+                    <a
+                      class="button button--git"
+                      href="https://github.com/JMFStorm/ePoller"
+                      target="_blank"
+                    >
+                      <span>view on Github</span><i class="fab fa-github"></i>
+                    </a>
                   </div>
                 </div>
               </li>

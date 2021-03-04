@@ -92,6 +92,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
+img {
+  max-width: 100%;
+}
 /* end reset */
 
 /* variables */
@@ -101,13 +105,20 @@ video {
 $font-sans-serif: "PT Sans", sans-serif;
 $font-serif: "Roboto Slab", serif;
 
-$font-clamp-title-01: clamp(3.6rem, 2.5vw, 6.8rem);
+$font-clamp-title-01: clamp(4rem, 2.5vw, 6.8rem);
 $font-clamp-text-01: clamp(1.6rem, 1.15vw, 4.2rem);
 
 /* globals */
 .title {
-  font-size: 2.8rem;
+  font-size: 4.2rem;
+  text-align: center;
   font-family: $font-serif;
+  margin: 4em 0 2em 0;
+}
+
+.section {
+  margin-bottom: 4em;
+  margin: auto;
 }
 
 /* html & body */
@@ -115,7 +126,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0rem;
   font-family: $font-sans-serif;
@@ -135,15 +146,19 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0.5em 1rem;
-  background: transparent;
+  background: #1d2327;
   position: fixed;
   width: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
   .header__watermark {
-    margin-right: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
     font-size: $font-clamp-text-01;
+    margin: auto auto auto 0;
   }
   .nav {
     display: none;
+    margin-left: auto;
+    margin-right: 2.5%;
     .nav__ul {
       display: flex;
       flex-direction: row;
@@ -152,19 +167,20 @@ body {
         padding: 0 0.75em;
         a {
           text-decoration: none;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
           color: white;
         }
       }
     }
   }
   .header__hamburger {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #ebebeb;
     margin-left: auto;
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .header {
     .nav {
       display: unset;
@@ -181,19 +197,22 @@ body {
   color: white;
   background-image: url("../images/wallpaper-01.jpg");
   background-size: cover;
-  background-position: 0% 60%;
+  background-position: 0% 57.5%;
   height: 62.5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 3.8rem;
   .section--title__wrapper {
     padding: 0 1rem;
     margin: auto;
     margin-top: 20rem;
     .section--title__title {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
       font-size: $font-clamp-title-01;
     }
     .section--title__paragraph {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
       margin-top: 1em;
       font-size: $font-clamp-text-01;
     }
@@ -208,8 +227,95 @@ body {
 
 /* projects section */
 .section--projects {
-  .section__title {
-  }
+  max-width: 160rem;
+  padding: 0 1rem;
   .projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .projects-list__item {
+      list-style: none;
+      flex-basis: 100%;
+      margin-bottom: 4em;
+
+      .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .project-card__title {
+          font-weight: 700;
+          font-size: 2.8rem;
+          text-align: center;
+          margin-bottom: auto;
+          height: 5rem;
+        }
+        .title--small {
+          font-size: 2rem;
+        }
+        .project-card__figure {
+          text-align: center;
+          margin: auto;
+          padding: 0 1em;
+          .project-card__image {
+            margin: 1em 0;
+            border: solid 1px rgba(0, 0, 0, 0.2);
+          }
+        }
+        .project-card__links {
+          margin-top: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          .button {
+            flex-basis: 100%;
+            max-width: 20rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0.5em;
+            margin: 0.35em auto;
+            font-size: 1.6rem;
+            border-radius: 4px;
+            box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+            i {
+              margin-left: 0.5em;
+              font-size: 2.5rem;
+            }
+          }
+          .button--demo {
+            background: green;
+            color: white;
+          }
+          .button--git {
+            background: #fdfdfd;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .section--projects {
+    .projects-list {
+      .projects-list__item {
+        padding: 0 1em;
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .section--projects {
+    .projects-list {
+      .projects-list__item {
+        flex-basis: 33.33%;
+      }
+    }
   }
 }
