@@ -286,13 +286,14 @@ body {
         margin: auto;
         height: 100%;
         .project-card__title {
-          font-size: clamp(3rem, 1.15vw, 3.6rem);
+          font-family: $font-serif;
+          font-size: clamp(2.6rem, 1.15vw, 3.6rem);
           font-weight: 700;
           text-align: center;
           margin-bottom: auto;
         }
         .title--small {
-          font-size: clamp(2.4rem, 1.05vw, 2.8rem);
+          font-size: clamp(2rem, 1.1vw, 2.8rem);
         }
         .project-card__figure {
           text-align: center;

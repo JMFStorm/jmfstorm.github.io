@@ -278,13 +278,14 @@ body {
   height: 100%;
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__title {
-  font-size: clamp(3rem, 1.15vw, 3.6rem);
+  font-family: "Roboto Slab", serif;
+  font-size: clamp(2.6rem, 1.15vw, 3.6rem);
   font-weight: 700;
   text-align: center;
   margin-bottom: auto;
 }
 .section--projects .projects-list .projects-list__item .project-card .title--small {
-  font-size: clamp(2.4rem, 1.05vw, 2.8rem);
+  font-size: clamp(2rem, 1.1vw, 2.8rem);
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__figure {
   text-align: center;
