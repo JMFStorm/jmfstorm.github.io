@@ -107,16 +107,17 @@ $font-sans-serif: "PT Sans", sans-serif;
 $font-serif: "Roboto Slab", serif;
 
 $font-clamp-title-01: clamp(4rem, 2.5vw, 6.8rem);
-$font-clamp-text-01: clamp(1.6rem, 1.15vw, 4.2rem);
+$font-clamp-text-01: clamp(1.8rem, 1.15vw, 3.2rem);
 $font-clamp-text-02: clamp(1.6rem, 1.05vw, 2rem);
 
 /* globals */
 .title {
-  font-size: 4.2rem;
+  /* font-size: 4.2rem; */
   text-align: center;
   font-family: $font-serif;
   margin: 4em 0 2em 0;
   padding-top: 7rem;
+  font-size: $font-clamp-title-01;
 }
 
 .section {
@@ -205,7 +206,7 @@ body {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 750px) {
   .header {
     .header__watermark {
       flex-basis: 40%;
@@ -383,6 +384,72 @@ body {
   }
 }
 
+/* about */
+.section--about {
+  .technologies {
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 4em;
+    .technologies__title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 3.2rem;
+      font-family: $font-serif;
+      font-size: clamp(2.4rem, 1.25vw, 3.2rem);
+    }
+    .technologies__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin: auto;
+      .technologies__item {
+        list-style: none;
+        display: flex;
+        padding: 1em;
+        flex-basis: 50%;
+        img {
+          width: 100%;
+          margin: auto;
+        }
+        #react {
+          padding: 20%;
+        }
+        #net-core {
+          padding: 27.5%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .section--about {
+    .technologies {
+      .technologies__list {
+        .technologies__item {
+          flex-basis: 33.33%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .section--about {
+    .technologies {
+      .technologies__list {
+        .technologies__item {
+          flex-basis: 25%;
+        }
+      }
+    }
+  }
+}
+
 /* footer */
 .footer {
   min-height: 40vh;
@@ -390,14 +457,17 @@ body {
   flex-direction: column;
   background: #1d2327;
   color: white;
+  margin-top: 8em;
   .footer__title {
     text-align: center;
-    font-size: 4.2rem;
+    /* font-size: 4.2rem; */
+    font-size: $font-clamp-title-01;
     margin-top: 1em;
   }
   .contacts-list {
     text-align: center;
     margin: 4em 0;
+    font-size: clamp(2rem, 1.1vw, 2.8rem);
     .contacts-list__item {
       margin: 1.5em 0;
       h3 {
@@ -418,7 +488,7 @@ body {
       text-align: center;
       font-size: 5rem;
       list-style: none;
-
+      font-size: clamp(6rem, 5vw, 8rem);
       a {
         color: white;
       }
