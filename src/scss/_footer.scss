@@ -1,5 +1,5 @@
 .footer {
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   background: #1d2327;
@@ -24,13 +24,16 @@
         color: white;
       }
       .email-row {
+        .email-row__email {
+          margin-bottom: 0.25em;
+        }
         button {
+          font-family: $font-sans-serif;
           font-size: clamp(1.6rem, 1.1vw, 2.2rem);
-          background: transparent;
-          color: white;
-          border: none;
-          text-decoration: wavy;
-          font-style: italic;
+          color: black;
+          padding: 0.25em;
+          background: #dfdfdf;
+          /* font-style: italic; */
           &:hover {
             cursor: pointer;
           }

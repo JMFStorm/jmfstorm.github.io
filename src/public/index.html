@@ -29,22 +29,33 @@
           </div>
 
           <!--hamburger-->
-          <a
-            onclick="toggleHamburger()"
+          <button
+            onclick="toggleHamburgerMain()"
+            type="button"
+            id="hamburger"
+            role="button"
+            tabindex="0"
             aria-label="toogle-navigation"
             class="header__hamburger"
-            ><i class="fas fa-bars"></i
-          ></a>
+          >
+            <i class="fas fa-bars"></i>
+          </button>
 
           <!--navigation-->
           <nav id="nav" class="nav hide-nav">
             <ul class="nav__ul">
-              <li class="nav__li"><a href="#main">home</a></li>
-              <li class="nav__li"><a href="#projects">projects</a></li>
               <li class="nav__li">
-                <a href="#about">about</a>
+                <a onclick="toggleHamburger()" href="#main">home</a>
               </li>
-              <li class="nav__li"><a href="#contact">contact me</a></li>
+              <li class="nav__li">
+                <a onclick="toggleHamburger()" href="#projects">projects</a>
+              </li>
+              <li class="nav__li">
+                <a onclick="toggleHamburger()" href="#about">about</a>
+              </li>
+              <li class="nav__li">
+                <a onclick="toggleHamburger()" href="#contact">contact me</a>
+              </li>
             </ul>
           </nav>
         </header>

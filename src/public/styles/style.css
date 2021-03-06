@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 *,
 *::before,
@@ -109,7 +109,7 @@ body {
   font-size: 2rem;
   margin: 0;
   padding: 0rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .title {
@@ -141,7 +141,6 @@ body {
   flex-direction: column;
 }
 
-/* header */
 .header {
   transition: height 1s;
   color: white;
@@ -156,24 +155,29 @@ body {
 .header .header__watermark {
   flex-basis: 80%;
   display: flex;
-  padding: 1em;
 }
 .header .header__watermark a {
+  padding: 0rem 2rem;
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 3px black;
   font-size: clamp(1.8rem, 1.15vw, 3.2rem);
-  margin: auto auto auto 0;
+  margin: 1em auto 1em 0;
+}
+.header .header__watermark a i {
+  padding: 1rem;
 }
 .header .header__hamburger {
   display: flex;
   margin-left: auto;
-  padding: 1rem;
+  background: unset;
+  border: none;
   font-size: 2.5rem;
   color: #ebebeb;
   text-align: right;
 }
 .header .header__hamburger i {
+  padding: 1rem;
   margin: auto;
 }
 .header .header__hamburger:hover {
@@ -199,13 +203,13 @@ body {
   color: white;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 780px) {
   .header .header__watermark {
-    flex-basis: 40%;
+    flex-basis: 35%;
   }
   .header .nav {
     margin-left: auto;
-    flex-basis: 50%;
+    flex-basis: 65%;
     display: flex;
   }
   .header .nav .nav__ul {
@@ -254,7 +258,6 @@ body {
   font-weight: 700;
 }
 
-/* projects section */
 .section--projects {
   max-width: 160rem;
   padding: 0 1rem;
@@ -379,7 +382,7 @@ body {
   }
 }
 .footer {
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   background: #1d2327;
@@ -406,13 +409,16 @@ body {
 .footer .contacts-list .contacts-list__item a {
   color: white;
 }
+.footer .contacts-list .contacts-list__item .email-row .email-row__email {
+  margin-bottom: 0.25em;
+}
 .footer .contacts-list .contacts-list__item .email-row button {
+  font-family: "Fira Sans", sans-serif;
   font-size: clamp(1.6rem, 1.1vw, 2.2rem);
-  background: transparent;
-  color: white;
-  border: none;
-  text-decoration: wavy;
-  font-style: italic;
+  color: black;
+  padding: 0.25em;
+  background: #dfdfdf;
+  /* font-style: italic; */
 }
 .footer .contacts-list .contacts-list__item .email-row button:hover {
   cursor: pointer;
