@@ -115,14 +115,14 @@ $font-clamp-text-02: clamp(1.6rem, 1.05vw, 2rem);
   /* font-size: 4.2rem; */
   text-align: center;
   font-family: $font-serif;
-  margin: 2em 0 2em 0;
+  margin: 2em 0 1em 0;
   padding-top: 7rem;
   font-size: $font-clamp-title-01;
 }
 @media (min-width: 1000px) {
   .title {
     /* font-size: 4.2rem; */
-    margin: 4em 0 2em 0;
+    margin: 2.5em 0 1em 0;
   }
 }
 
