@@ -1,11 +1,11 @@
 .section--about {
-  max-width: 80rem;
+  max-width: 100rem;
   .technologies__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     .technologies {
-      flex-basis: 350px;
+      flex-basis: 450px;
       margin: 1em auto;
       padding: 1rem;
       .technologies__title {

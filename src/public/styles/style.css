@@ -229,7 +229,7 @@ body {
   }
 }
 .section--about {
-  max-width: 80rem;
+  max-width: 100rem;
 }
 .section--about .technologies__wrapper {
   display: flex;
@@ -237,7 +237,7 @@ body {
   flex-wrap: wrap;
 }
 .section--about .technologies__wrapper .technologies {
-  flex-basis: 350px;
+  flex-basis: 450px;
   margin: 1em auto;
   padding: 1rem;
 }
@@ -397,7 +397,7 @@ body {
 .footer .contacts-list {
   text-align: center;
   margin: 4em 0;
-  font-size: clamp(2rem, 1.1vw, 2.8rem);
+  font-size: clamp(2rem, 1.12vw, 2.8rem);
 }
 .footer .contacts-list .contacts-list__item {
   margin: 1.5em 0;
@@ -414,7 +414,7 @@ body {
 }
 .footer .contacts-list .contacts-list__item .email-row button {
   font-family: "Fira Sans", sans-serif;
-  font-size: clamp(1.6rem, 1.1vw, 2.2rem);
+  font-size: clamp(1.6rem, 1.06vw, 2rem);
   color: black;
   padding: 0.25em;
   background: #dfdfdf;
