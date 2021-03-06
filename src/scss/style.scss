@@ -364,7 +364,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .section--projects {
     .projects-list {
       .projects-list__item {
@@ -420,18 +420,10 @@ body {
     }
   }
 }
-@media (min-width: 500px) {
-  .section--about {
-    .technologies__wrapper {
-      .technologies {
-      }
-    }
-  }
-}
 
 /* footer */
 .footer {
-  min-height: 40vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   background: #1d2327;
@@ -439,7 +431,6 @@ body {
   margin-top: 4em;
   .footer__title {
     text-align: center;
-    /* font-size: 4.2rem; */
     font-size: $font-clamp-title-01;
     margin-top: 1em;
   }
@@ -456,6 +447,21 @@ body {
       a {
         color: white;
       }
+      .email-row {
+        .email-row__email {
+        }
+        button {
+          font-size: clamp(1.6rem, 1.1vw, 2.2rem);
+          background: transparent;
+          color: white;
+          border: none;
+          text-decoration: wavy;
+          font-style: italic;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
   .links-list {
@@ -467,7 +473,7 @@ body {
       text-align: center;
       font-size: 5rem;
       list-style: none;
-      font-size: clamp(6rem, 5vw, 8rem);
+      font-size: clamp(6rem, 4vw, 8rem);
       a {
         color: white;
       }

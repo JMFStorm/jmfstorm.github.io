@@ -71,11 +71,16 @@
                     Musicians of Helsinki Philharmonic Orchestra (1882 — 1932)
                   </h3>
                   <figure class="project-card__figure">
-                    <img
-                      class="project-card__image"
-                      src="./images/hpo.jpg"
-                      alt=""
-                    />
+                    <a
+                      href="https://hpo-history.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-card__image"
+                        src="./images/hpo.jpg"
+                        alt=""
+                      />
+                    </a>
                   </figure>
                   <div class="project-card__links">
                     <a
@@ -99,11 +104,16 @@
                 <div class="project-card">
                   <h3 class="project-card__title">ePoller</h3>
                   <figure class="project-card__figure">
-                    <img
-                      class="project-card__image"
-                      src="./images/poller.jpg"
-                      alt=""
-                    />
+                    <a
+                      href="https://epoller-react-app.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-card__image"
+                        src="./images/poller.jpg"
+                        alt=""
+                      />
+                    </a>
                   </figure>
                   <div class="project-card__links">
                     <a
@@ -131,7 +141,7 @@
             <h2 class="section__title title">about me</h2>
             <div class="technologies__wrapper">
               <div class="technologies">
-                <h3 class="technologies__title">Web Devtools:</h3>
+                <h3 class="technologies__title">Devtools:</h3>
                 <ul class="technologies__list">
                   <li class="technologies__item">
                     <span>Frontend coding: </span>React.js & Angular
@@ -182,7 +192,12 @@
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <h3>Email:</h3>
-              <a>jannematiasf@gmail.com</a>
+              <div class="email-row">
+                <p class="email-row__email" id="email">
+                  jannematiasf@gmail.com
+                </p>
+                <button onclick="copyEmail()">(Copy to clipboard)</button>
+              </div>
             </li>
           </ul>
           <ul class="links-list">
