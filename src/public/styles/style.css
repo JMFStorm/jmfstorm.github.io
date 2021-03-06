@@ -108,11 +108,17 @@ img {
   /* font-size: 4.2rem; */
   text-align: center;
   font-family: "Roboto Slab", serif;
-  margin: 4em 0 2em 0;
+  margin: 2em 0 2em 0;
   padding-top: 7rem;
   font-size: clamp(4rem, 2.5vw, 6.8rem);
 }
 
+@media (min-width: 1000px) {
+  .title {
+    /* font-size: 4.2rem; */
+    margin: 4em 0 2em 0;
+  }
+}
 .section {
   margin-bottom: 4em;
   margin: auto;
@@ -198,7 +204,7 @@ body {
   color: white;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   .header .header__watermark {
     flex-basis: 40%;
   }
@@ -268,7 +274,7 @@ body {
 .section--projects .projects-list .projects-list__item {
   list-style: none;
   flex-basis: 100%;
-  margin-bottom: 4em;
+  margin: 1em 0;
 }
 .section--projects .projects-list .projects-list__item .project-card {
   display: flex;
@@ -358,7 +364,7 @@ body {
   flex-wrap: wrap;
 }
 .section--about .technologies__wrapper .technologies {
-  flex-basis: 320px;
+  flex-basis: 350px;
   margin: 1em auto;
   padding: 1rem;
 }
@@ -386,7 +392,7 @@ body {
   flex-direction: column;
   background: #1d2327;
   color: white;
-  margin-top: 8em;
+  margin-top: 4em;
 }
 .footer .footer__title {
   text-align: center;
@@ -423,6 +429,12 @@ body {
 }
 .footer .links-list .links-list__item a {
   color: white;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    margin-top: 8em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
