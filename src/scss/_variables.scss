@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+$font-sans-serif: "PT Sans", sans-serif;
+$font-serif: "Roboto Slab", serif;
+
+$font-clamp-title-01: clamp(4rem, 2.5vw, 6.8rem);
+$font-clamp-text-01: clamp(1.8rem, 1.15vw, 3.2rem);
+$font-clamp-text-02: clamp(1.6rem, 1.05vw, 2rem);

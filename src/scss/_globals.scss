@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0rem;
+  font-family: $font-sans-serif;
+}
+
+.title {
+  /* font-size: 4.2rem; */
+  text-align: center;
+  font-family: $font-serif;
+  margin: 2em 0 1em 0;
+  padding-top: 7rem;
+  font-size: $font-clamp-title-01;
+}
+@media (min-width: 1000px) {
+  .title {
+    /* font-size: 4.2rem; */
+    margin: 2.5em 0 1em 0;
+  }
+}
+
+.section {
+  margin-bottom: 4em;
+  margin: auto;
+}
+
+.hide-nav {
+  display: none;
+}
+
+.wrapper {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

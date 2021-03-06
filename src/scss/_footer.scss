@@ -1,0 +1,61 @@
+.footer {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background: #1d2327;
+  color: white;
+  margin-top: 4em;
+  .footer__title {
+    text-align: center;
+    font-size: $font-clamp-title-01;
+    margin-top: 1em;
+  }
+  .contacts-list {
+    text-align: center;
+    margin: 4em 0;
+    font-size: clamp(2rem, 1.1vw, 2.8rem);
+    .contacts-list__item {
+      margin: 1.5em 0;
+      h3 {
+        font-weight: 700;
+        margin: 0.25em 0;
+      }
+      a {
+        color: white;
+      }
+      .email-row {
+        button {
+          font-size: clamp(1.6rem, 1.1vw, 2.2rem);
+          background: transparent;
+          color: white;
+          border: none;
+          text-decoration: wavy;
+          font-style: italic;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .links-list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 2em;
+    .links-list__item {
+      text-align: center;
+      font-size: 5rem;
+      list-style: none;
+      font-size: clamp(6rem, 4vw, 8rem);
+      a {
+        color: white;
+      }
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .footer {
+    margin-top: 8em;
+  }
+}

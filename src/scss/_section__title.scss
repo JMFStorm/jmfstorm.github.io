@@ -1,0 +1,31 @@
+.section--title {
+  color: white;
+  background-image: url("../images/wallpaper-01.jpg");
+  background-size: cover;
+  background-position: 0% 57.5%;
+  height: 62.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3.8rem;
+  .section--title__wrapper {
+    padding: 0 1rem;
+    margin: auto;
+    margin-top: 20rem;
+    .section--title__title {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+      font-size: $font-clamp-title-01;
+    }
+    .section--title__paragraph {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+      margin-top: 1em;
+      font-size: $font-clamp-text-01;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .section--title {
+    height: clamp(62.5rem, 35vw, 100rem);
+  }
+}
