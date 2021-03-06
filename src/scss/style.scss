@@ -157,6 +157,7 @@ body {
 
 /* header */
 .header {
+  transition: height 1s;
   color: white;
   display: flex;
   flex-direction: row;
@@ -448,8 +449,6 @@ body {
         color: white;
       }
       .email-row {
-        .email-row__email {
-        }
         button {
           font-size: clamp(1.6rem, 1.1vw, 2.2rem);
           background: transparent;

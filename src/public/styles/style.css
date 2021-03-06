@@ -149,6 +149,7 @@ body {
 
 /* header */
 .header {
+  transition: height 1s;
   color: white;
   display: flex;
   flex-direction: row;

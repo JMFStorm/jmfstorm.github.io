@@ -39,8 +39,11 @@
           <!--navigation-->
           <nav id="nav" class="nav hide-nav">
             <ul class="nav__ul">
+              <li class="nav__li"><a href="#main">home</a></li>
               <li class="nav__li"><a href="#projects">projects</a></li>
-              <li class="nav__li"><a href="#about">about</a></li>
+              <li class="nav__li">
+                <a href="#about">about</a>
+              </li>
               <li class="nav__li"><a href="#contact">contact me</a></li>
             </ul>
           </nav>
@@ -68,11 +71,16 @@
                     Musicians of Helsinki Philharmonic Orchestra (1882 — 1932)
                   </h3>
                   <figure class="project-card__figure">
-                    <img
-                      class="project-card__image"
-                      src="./images/hpo.jpg"
-                      alt=""
-                    />
+                    <a
+                      href="https://hpo-history.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-card__image"
+                        src="./images/hpo.jpg"
+                        alt=""
+                      />
+                    </a>
                   </figure>
                   <div class="project-card__links">
                     <a
@@ -96,11 +104,16 @@
                 <div class="project-card">
                   <h3 class="project-card__title">ePoller</h3>
                   <figure class="project-card__figure">
-                    <img
-                      class="project-card__image"
-                      src="./images/poller.jpg"
-                      alt=""
-                    />
+                    <a
+                      href="https://epoller-react-app.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-card__image"
+                        src="./images/poller.jpg"
+                        alt=""
+                      />
+                    </a>
                   </figure>
                   <div class="project-card__links">
                     <a
@@ -126,35 +139,49 @@
           <!--details-->
           <section id="about" class="section section--about">
             <h2 class="section__title title">about me</h2>
-            <div class="technologies">
-              <h3 class="technologies__title">Technologies that I use:</h3>
-              <ul class="technologies__list">
-                <li class="technologies__item">
-                  <img src="./images/node-js.png" alt="Node js" />
-                </li>
-                <li class="technologies__item">
-                  <img
-                    id="net-core"
-                    src="./images/net-core.svg.png"
-                    alt=".NET Core"
-                  />
-                </li>
-                <li class="technologies__item">
-                  <img src="./images/postgresql.svg.png" alt="PostgreSQL" />
-                </li>
-                <li class="technologies__item">
-                  <img src="./images/MongoDB.png" alt="MongoDB" />
-                </li>
-                <li class="technologies__item">
-                  <img src="./images/graphql.png" alt="GraphQL" />
-                </li>
-                <li class="technologies__item">
-                  <img id="react" src="./images/react.svg.png" alt="React" />
-                </li>
-                <li class="technologies__item">
-                  <img src="./images/typescript.png" alt="Typescript" />
-                </li>
-              </ul>
+            <div class="technologies__wrapper">
+              <div class="technologies">
+                <h3 class="technologies__title">Devtools:</h3>
+                <ul class="technologies__list">
+                  <li class="technologies__item">
+                    <span>Frontend coding: </span>React.js & Angular
+                  </li>
+                  <li class="technologies__item">
+                    <span>Server-side coding: </span>Node.js & .NET Core
+                  </li>
+                  <li class="technologies__item">
+                    <span>Databases: </span> Microsoft SQL Server, SQLite,
+                    PostgreSQL & MongoDB
+                  </li>
+                  <li class="technologies__item">
+                    <span>Tests: </span>Jest & Cypress Testing Frameworks
+                  </li>
+                  <li class="technologies__item">
+                    <span>Languages: </span>C#, Typescript, SCSS & Python
+                  </li>
+                </ul>
+              </div>
+              <div class="technologies">
+                <h3 class="technologies__title">Other:</h3>
+                <ul class="technologies__list">
+                  <li class="technologies__item">
+                    <span>Cloud Services: </span>Azure SQLDatabases & Amazon S3
+                    Storage
+                  </li>
+                  <li class="technologies__item">
+                    <span>Project management: </span>Azure DevOps
+                  </li>
+                  <li class="technologies__item">
+                    <span>Agile methods: </span>SCRUM
+                  </li>
+                  <li class="technologies__item">
+                    <span>IDEs: </span>VS Code & Visual Studio 2019
+                  </li>
+                  <li class="technologies__item">
+                    <span>Version control: </span>Git Extensions
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
         </main>
@@ -165,7 +192,12 @@
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <h3>Email:</h3>
-              <a>jannematiasf@gmail.com</a>
+              <div class="email-row">
+                <p class="email-row__email" id="email">
+                  jannematiasf@gmail.com
+                </p>
+                <button onclick="copyEmail()">(Copy to clipboard)</button>
+              </div>
             </li>
           </ul>
           <ul class="links-list">

@@ -2,7 +2,9 @@ let navOpen: boolean = false;
 
 function toggleHamburger() {
   navOpen = !navOpen;
-  // console.log("navOpen", navOpen);
+
+  const header = document.getElementById("header");
+
   const navbar = document.getElementById("nav");
   navbar?.classList.toggle("hide-nav");
 }
