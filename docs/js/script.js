@@ -9,9 +9,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 let navOpen = false;
-function toggleHamburger() {
+function toggleHamburgerMain() {
     navOpen = !navOpen;
-    const header = document.getElementById("header");
+    const navbar = document.getElementById("nav");
+    navbar === null || navbar === void 0 ? void 0 : navbar.classList.toggle("hide-nav");
+}
+function toggleHamburger() {
+    if (850 < window.innerWidth) {
+        return;
+    }
+    navOpen = !navOpen;
     const navbar = document.getElementById("nav");
     navbar === null || navbar === void 0 ? void 0 : navbar.classList.toggle("hide-nav");
 }

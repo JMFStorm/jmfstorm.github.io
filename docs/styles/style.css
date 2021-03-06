@@ -1,5 +1,4 @@
-/* reset */
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 *,
 *::before,
@@ -101,14 +100,23 @@ img {
   display: block;
 }
 
-/* end reset */
-/* variables */
-/* globals */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
 .title {
   /* font-size: 4.2rem; */
   text-align: center;
   font-family: "Roboto Slab", serif;
-  margin: 2em 0 2em 0;
+  margin: 2em 0 1em 0;
   padding-top: 7rem;
   font-size: clamp(4rem, 2.5vw, 6.8rem);
 }
@@ -116,7 +124,7 @@ img {
 @media (min-width: 1000px) {
   .title {
     /* font-size: 4.2rem; */
-    margin: 4em 0 2em 0;
+    margin: 2.5em 0 1em 0;
   }
 }
 .section {
@@ -128,26 +136,11 @@ img {
   display: none;
 }
 
-/* html & body */
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-size: 2rem;
-  margin: 0;
-  padding: 0rem;
-  font-family: "PT Sans", sans-serif;
-}
-
-/* wrapper & container */
 .wrapper .container {
   display: flex;
   flex-direction: column;
 }
 
-/* header */
 .header {
   transition: height 1s;
   color: white;
@@ -162,24 +155,29 @@ body {
 .header .header__watermark {
   flex-basis: 80%;
   display: flex;
-  padding: 1em;
 }
 .header .header__watermark a {
+  padding: 0rem 2rem;
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 3px black;
   font-size: clamp(1.8rem, 1.15vw, 3.2rem);
-  margin: auto auto auto 0;
+  margin: 1em auto 1em 0;
+}
+.header .header__watermark a i {
+  padding: 1rem;
 }
 .header .header__hamburger {
   display: flex;
   margin-left: auto;
-  padding: 1rem;
+  background: unset;
+  border: none;
   font-size: 2.5rem;
   color: #ebebeb;
   text-align: right;
 }
 .header .header__hamburger i {
+  padding: 1rem;
   margin: auto;
 }
 .header .header__hamburger:hover {
@@ -205,13 +203,13 @@ body {
   color: white;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 780px) {
   .header .header__watermark {
-    flex-basis: 40%;
+    flex-basis: 35%;
   }
   .header .nav {
     margin-left: auto;
-    flex-basis: 50%;
+    flex-basis: 65%;
     display: flex;
   }
   .header .nav .nav__ul {
@@ -230,39 +228,36 @@ body {
     display: none;
   }
 }
-/* title section */
-.section--title {
-  color: white;
-  background-image: url("../images/wallpaper-01.jpg");
-  background-size: cover;
-  background-position: 0% 57.5%;
-  height: 62.5rem;
+.section--about {
+  max-width: 80rem;
+}
+.section--about .technologies__wrapper {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 3.8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.section--title .section--title__wrapper {
-  padding: 0 1rem;
-  margin: auto;
-  margin-top: 20rem;
+.section--about .technologies__wrapper .technologies {
+  flex-basis: 350px;
+  margin: 1em auto;
+  padding: 1rem;
 }
-.section--title .section--title__wrapper .section--title__title {
-  text-shadow: 1px 1px 3px black;
-  font-size: clamp(4rem, 2.5vw, 6.8rem);
+.section--about .technologies__wrapper .technologies .technologies__title {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 0.5em;
+  font-size: clamp(2.4rem, 1.7vw, 4rem);
 }
-.section--title .section--title__wrapper .section--title__paragraph {
-  text-shadow: 1px 1px 3px black;
-  margin-top: 1em;
+.section--about .technologies__wrapper .technologies__list {
   font-size: clamp(1.8rem, 1.15vw, 3.2rem);
+  font-size: clamp(1.8rem, 1.1vw, 2.8rem);
+}
+.section--about .technologies__wrapper .technologies__list .technologies__item {
+  margin: 0.5em 0;
+  list-style: none;
+}
+.section--about .technologies__wrapper .technologies__list .technologies__item span {
+  font-weight: 700;
 }
 
-@media (min-width: 900px) {
-  .section--title {
-    height: clamp(62.5rem, 35vw, 100rem);
-  }
-}
-/* projects section */
 .section--projects {
   max-width: 160rem;
   padding: 0 1rem;
@@ -355,40 +350,39 @@ body {
     flex-basis: 45%;
   }
 }
-/* about */
-.section--about {
-  max-width: 80rem;
-}
-.section--about .technologies__wrapper {
+.section--title {
+  color: white;
+  background-image: url("../images/wallpaper-01.jpg");
+  background-size: cover;
+  background-position: 0% 57.5%;
+  height: 62.5rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3.8rem;
 }
-.section--about .technologies__wrapper .technologies {
-  flex-basis: 350px;
-  margin: 1em auto;
-  padding: 1rem;
+.section--title .section--title__wrapper {
+  padding: 0 1rem;
+  margin: auto;
+  margin-top: 20rem;
 }
-.section--about .technologies__wrapper .technologies .technologies__title {
-  font-family: "Roboto Slab", serif;
-  margin-bottom: 0.5em;
-  font-size: clamp(2.4rem, 1.7vw, 4rem);
+.section--title .section--title__wrapper .section--title__title {
+  text-shadow: 1px 1px 3px black;
+  font-size: clamp(4rem, 2.5vw, 6.8rem);
 }
-.section--about .technologies__wrapper .technologies__list {
+.section--title .section--title__wrapper .section--title__paragraph {
+  text-shadow: 1px 1px 3px black;
+  margin-top: 1em;
   font-size: clamp(1.8rem, 1.15vw, 3.2rem);
-  font-size: clamp(1.8rem, 1.1vw, 2.8rem);
-}
-.section--about .technologies__wrapper .technologies__list .technologies__item {
-  margin: 0.5em 0;
-  list-style: none;
-}
-.section--about .technologies__wrapper .technologies__list .technologies__item span {
-  font-weight: 700;
 }
 
-/* footer */
+@media (min-width: 900px) {
+  .section--title {
+    height: clamp(62.5rem, 35vw, 100rem);
+  }
+}
 .footer {
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   background: #1d2327;
@@ -410,18 +404,21 @@ body {
 }
 .footer .contacts-list .contacts-list__item h3 {
   font-weight: 700;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
 }
 .footer .contacts-list .contacts-list__item a {
   color: white;
 }
+.footer .contacts-list .contacts-list__item .email-row .email-row__email {
+  margin-bottom: 0.25em;
+}
 .footer .contacts-list .contacts-list__item .email-row button {
+  font-family: "Fira Sans", sans-serif;
   font-size: clamp(1.6rem, 1.1vw, 2.2rem);
-  background: transparent;
-  color: white;
-  border: none;
-  text-decoration: wavy;
-  font-style: italic;
+  color: black;
+  padding: 0.25em;
+  background: #dfdfdf;
+  /* font-style: italic; */
 }
 .footer .contacts-list .contacts-list__item .email-row button:hover {
   cursor: pointer;
