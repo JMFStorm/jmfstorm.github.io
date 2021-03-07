@@ -318,7 +318,7 @@ body {
   border-radius: 4px;
   box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
 }
-.section--projects .projects-list .projects-list__item .project-card .project-card__links .button i {
+.section--projects .projects-list .projects-list__item .project-card .project-card__links .button em {
   margin-left: 0.5em;
   font-size: 2.5rem;
 }
