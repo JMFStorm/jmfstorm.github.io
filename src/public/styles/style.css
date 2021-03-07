@@ -352,6 +352,7 @@ body {
 }
 .section--title {
   color: white;
+  background-color: #1d2327;
   background-image: url("../images/wallpaper-01.jpg");
   background-size: cover;
   background-position: 0% 57.5%;
