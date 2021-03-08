@@ -161,7 +161,7 @@ body {
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 3px black;
-  font-size: clamp(1.8rem, 1.15vw, 3.2rem);
+  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
   margin: 1em auto 1em 0;
 }
 .header .header__watermark a i {
@@ -185,7 +185,7 @@ body {
 }
 .header .nav {
   flex-basis: 100%;
-  font-size: clamp(1.8rem, 1.15vw, 3.2rem);
+  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
 }
 .header .nav .nav__ul {
   padding: 0em 1em 1em 1em;
@@ -194,13 +194,17 @@ body {
   flex-direction: column;
 }
 .header .nav .nav__ul .nav__li {
-  margin: 0.5em 0;
   list-style: none;
 }
 .header .nav .nav__ul .nav__li a {
+  padding: 0.5em 0;
+  display: block;
   text-decoration: none;
   text-shadow: 1px 1px 3px black;
   color: white;
+}
+.header .nav .nav__ul .nav__li a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 780px) {
@@ -213,7 +217,7 @@ body {
     display: flex;
   }
   .header .nav .nav__ul {
-    padding: 1em;
+    padding: 0em 0em;
     flex-direction: row;
     margin-left: auto;
   }
@@ -222,6 +226,7 @@ body {
     margin: 0 1em;
   }
   .header .nav .nav__ul .nav__li a {
+    padding: 0.5em 0.5em;
     margin: auto;
   }
   .header .header__hamburger {
@@ -247,7 +252,7 @@ body {
   font-size: clamp(2.4rem, 1.7vw, 4rem);
 }
 .section--about .technologies__wrapper .technologies__list {
-  font-size: clamp(1.8rem, 1.15vw, 3.2rem);
+  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
   font-size: clamp(1.8rem, 1.1vw, 2.8rem);
 }
 .section--about .technologies__wrapper .technologies__list .technologies__item {
@@ -317,6 +322,16 @@ body {
   margin: 0.35em auto;
   border-radius: 4px;
   box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+  /* hover */
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  /* end hover */
+}
+.section--projects .projects-list .projects-list__item .project-card .project-card__links .button:hover, .section--projects .projects-list .projects-list__item .project-card .project-card__links .button:focus, .section--projects .projects-list .projects-list__item .project-card .project-card__links .button:active {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__links .button em {
   margin-left: 0.5em;
@@ -374,7 +389,7 @@ body {
 .section--title .section--title__wrapper .section--title__paragraph {
   text-shadow: 1px 1px 3px black;
   margin-top: 1em;
-  font-size: clamp(1.8rem, 1.15vw, 3.2rem);
+  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
 }
 
 @media (min-width: 900px) {

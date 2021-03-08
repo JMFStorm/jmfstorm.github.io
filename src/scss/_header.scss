@@ -49,12 +49,16 @@
       display: flex;
       flex-direction: column;
       .nav__li {
-        margin: 0.5em 0;
         list-style: none;
         a {
+          padding: 0.5em 0;
+          display: block;
           text-decoration: none;
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
           color: white;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -71,13 +75,14 @@
       flex-basis: 65%;
       display: flex;
       .nav__ul {
-        padding: 1em;
+        padding: 0em 0em;
         flex-direction: row;
         margin-left: auto;
         .nav__li {
           display: flex;
           margin: 0 1em;
           a {
+            padding: 0.5em 0.5em;
             margin: auto;
           }
         }
