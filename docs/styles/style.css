@@ -160,7 +160,7 @@ body {
   padding: 0rem 2rem;
   text-decoration: none;
   color: white;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
   font-size: clamp(1.8rem, 1.075vw, 3.2rem);
   margin: 1em auto 1em 0;
 }
@@ -200,7 +200,7 @@ body {
   padding: 0.5em 0;
   display: block;
   text-decoration: none;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
   color: white;
 }
 .header .nav .nav__ul .nav__li a:hover {
@@ -342,8 +342,8 @@ body {
   color: white;
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__links .button--git {
-  background: #fdfdfd;
-  color: black;
+  background: #303437;
+  color: white;
 }
 
 @media (min-width: 650px) {
@@ -353,16 +353,6 @@ body {
   }
   .section--projects .projects-list .projects-list__item .project-card .project-card__title {
     min-height: 6.2rem;
-  }
-}
-@media (min-width: 1200px) {
-  .section--projects .projects-list .projects-list__item {
-    flex-basis: 33.33%;
-  }
-}
-@media (min-width: 900px) {
-  .section--projects .projects-list .projects-list__item .project-card .project-card__links .button {
-    flex-basis: 45%;
   }
 }
 .section--title {
@@ -383,11 +373,11 @@ body {
   margin-top: 20rem;
 }
 .section--title .section--title__wrapper .section--title__title {
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
   font-size: clamp(4rem, 2.5vw, 6.8rem);
 }
 .section--title .section--title__wrapper .section--title__paragraph {
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
   margin-top: 1em;
   font-size: clamp(1.8rem, 1.075vw, 3.2rem);
 }
