@@ -329,8 +329,8 @@ body {
   /* end hover */
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__links .button:hover, .section--projects .projects-list .projects-list__item .project-card .project-card__links .button:focus, .section--projects .projects-list .projects-list__item .project-card .project-card__links .button:active {
-  -webkit-transform: scale(0.95);
-  transform: scale(0.95);
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__links .button em {
   margin-left: 0.5em;
