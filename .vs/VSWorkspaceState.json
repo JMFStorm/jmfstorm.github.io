@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src\\scss"
+    "\\docs",
+    "\\docs\\styles",
+    "\\scss"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\scss\\_header.scss",
   "PreviewInSolutionExplorer": false
 }
