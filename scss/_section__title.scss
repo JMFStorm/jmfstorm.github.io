@@ -15,18 +15,12 @@
     margin-top: 20rem;
     .section--title__title {
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-      font-size: $font-clamp-title-01;
+      font-size: $font-clamp-title-02;
     }
     .section--title__paragraph {
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
       margin-top: 1em;
-      font-size: $font-clamp-text-01;
+      font-size: $font-clamp-text-03;
     }
-  }
-}
-
-@media (min-width: 900px) {
-  .section--title {
-    height: clamp(62.5rem, 35vw, 100rem);
   }
 }

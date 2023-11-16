@@ -42,7 +42,7 @@
   }
   .nav {
     flex-basis: 100%;
-    font-size: $font-clamp-text-01;
+    font-size: $font-clamp-text-04;
     .nav__ul {
       padding: 0em 1em 1em 1em;
       text-align: center;
@@ -68,11 +68,11 @@
 @media (min-width: 780px) {
   .header {
     .header__watermark {
-      flex-basis: 35%;
+      flex-basis: 45%;
     }
     .nav {
       margin-left: auto;
-      flex-basis: 65%;
+      flex-basis: 55%;
       display: flex;
       .nav__ul {
         padding: 0em 0em;

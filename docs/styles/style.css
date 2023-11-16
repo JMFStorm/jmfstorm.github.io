@@ -118,7 +118,7 @@ body {
   font-family: "Roboto Slab", serif;
   margin: 2em 0 1em 0;
   padding-top: 7rem;
-  font-size: clamp(4rem, 2.5vw, 6.8rem);
+  font-size: clamp(3.5rem, 2.5vw, 5rem);
 }
 
 @media (min-width: 1000px) {
@@ -161,7 +161,7 @@ body {
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
-  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   margin: 1em auto 1em 0;
 }
 .header .header__watermark a i {
@@ -185,7 +185,7 @@ body {
 }
 .header .nav {
   flex-basis: 100%;
-  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
+  font-size: clamp(1.6rem, 2vw, 2rem);
 }
 .header .nav .nav__ul {
   padding: 0em 1em 1em 1em;
@@ -209,11 +209,11 @@ body {
 
 @media (min-width: 780px) {
   .header .header__watermark {
-    flex-basis: 35%;
+    flex-basis: 45%;
   }
   .header .nav {
     margin-left: auto;
-    flex-basis: 65%;
+    flex-basis: 55%;
     display: flex;
   }
   .header .nav .nav__ul {
@@ -249,11 +249,10 @@ body {
 .section--about .technologies__wrapper .technologies .technologies__title {
   font-family: "Roboto Slab", serif;
   margin-bottom: 0.5em;
-  font-size: clamp(2.4rem, 1.7vw, 4rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .section--about .technologies__wrapper .technologies__list {
-  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
-  font-size: clamp(1.8rem, 1.1vw, 2.8rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .section--about .technologies__wrapper .technologies__list .technologies__item {
   margin: 0.5em 0;
@@ -288,13 +287,13 @@ body {
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__title {
   font-family: "Roboto Slab", serif;
-  font-size: clamp(2.6rem, 1.15vw, 3.6rem);
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
   font-weight: 700;
   text-align: center;
   margin-bottom: auto;
 }
 .section--projects .projects-list .projects-list__item .project-card .title--small {
-  font-size: clamp(2rem, 1.1vw, 2.8rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__figure {
   text-align: center;
@@ -312,7 +311,7 @@ body {
   justify-content: space-around;
 }
 .section--projects .projects-list .projects-list__item .project-card .project-card__links .button {
-  font-size: clamp(1.6rem, 1.01vw, 2rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   flex-basis: 100%;
   display: inline-flex;
   align-items: center;
@@ -374,19 +373,14 @@ body {
 }
 .section--title .section--title__wrapper .section--title__title {
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
-  font-size: clamp(4rem, 2.5vw, 6.8rem);
+  font-size: clamp(4rem, 4vw, 5.5rem);
 }
 .section--title .section--title__wrapper .section--title__paragraph {
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
   margin-top: 1em;
-  font-size: clamp(1.8rem, 1.075vw, 3.2rem);
+  font-size: clamp(2rem, 2vw, 2.5rem);
 }
 
-@media (min-width: 900px) {
-  .section--title {
-    height: clamp(62.5rem, 35vw, 100rem);
-  }
-}
 .footer {
   min-height: 40vh;
   display: flex;
@@ -397,13 +391,13 @@ body {
 }
 .footer .footer__title {
   text-align: center;
-  font-size: clamp(4rem, 2.5vw, 6.8rem);
+  font-size: clamp(3.5rem, 2.5vw, 5rem);
   margin-top: 1em;
 }
 .footer .contacts-list {
   text-align: center;
   margin: 4em 0;
-  font-size: clamp(2rem, 1.12vw, 2.8rem);
+  font-size: clamp(2rem, 2vw, 2.5rem);
 }
 .footer .contacts-list .contacts-list__item {
   margin: 1.5em 0;
@@ -420,7 +414,6 @@ body {
 }
 .footer .contacts-list .contacts-list__item .email-row button {
   font-family: "Fira Sans", sans-serif;
-  font-size: clamp(1.6rem, 1.06vw, 2rem);
   color: black;
   padding: 0.25em;
   background: #dfdfdf;
@@ -439,10 +432,26 @@ body {
   text-align: center;
   font-size: 5rem;
   list-style: none;
-  font-size: clamp(6rem, 4vw, 8rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 .footer .links-list .links-list__item a {
   color: white;
+}
+
+.links-list .github-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.links-list .github-link:hover span {
+  text-decoration: underline;
+}
+.links-list .github-link em {
+  font-size: 6rem;
+}
+.links-list .github-link span {
+  margin-top: 1rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 1000px) {
