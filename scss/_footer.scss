@@ -1,10 +1,10 @@
 .footer {
-  min-height: 40vh;
   display: flex;
   flex-direction: column;
   background: #1d2327;
   color: white;
   margin-top: 4em;
+  
   .footer__title {
     text-align: center;
     font-size: $font-clamp-title-01;
@@ -12,8 +12,9 @@
   }
   .contacts-list {
     text-align: center;
-    margin: 4em 0;
+    margin: 2em 0;
     font-size: $font-clamp-text-03;
+
     .contacts-list__item {
       margin: 1.5em 0;
       h3 {
@@ -43,13 +44,16 @@
   .links-list {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 2rem auto;
     margin-bottom: 2em;
+
     .links-list__item {
+      margin: auto 2rem;
       text-align: center;
       font-size: 5rem;
       list-style: none;
       font-size: $font-clamp-text-02;
+
       a {
         color: white;
       }
@@ -76,6 +80,10 @@
     span {
         margin-top: 1rem;
         font-size: 2.5rem;
+    }
+
+    svg {
+      margin: auto;
     }
 }
 
