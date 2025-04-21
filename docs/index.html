@@ -1,208 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--meta-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <head>
+                <!--meta-->
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--title-->
-    <title>Janne Fagerström Portfolio</title>
+                <!--title-->
+                <title>Janne Fagerström Portfolio</title>
 
-    <!--styles-->
-    <link rel="stylesheet" href="./styles/style.css" />
+                <!--styles-->
+                <link rel="stylesheet" href="./styles/style.css" />
 
-    <!--font awesome-->
-    <script
-      src="https://kit.fontawesome.com/e5871f40ed.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+                <!--font awesome-->
+                <script src="https://kit.fontawesome.com/e5871f40ed.js" crossorigin="anonymous"></script>
+        </head>
 
-  <!--body-->
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <header id="header" class="header">
-          <div class="header__watermark">
-            <a href="#main">Janne Fagerström Portfolio</a>
-          </div>
+        <!--body-->
+        <body>
+                <div class="wrapper">
+                        <div class="container">
+                                <header id="header" class="header">
+                                        <div class="header__watermark">
+                                                <a href="#main">Janne Fagerström Portfolio</a>
+                                        </div>
 
-          <!--hamburger-->
-          <button
-            onclick="toggleHamburgerMain()"
-            type="button"
-            id="hamburger"
-            tabindex="0"
-            aria-label="toogle-navigation"
-            class="header__hamburger"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+                                        <!--hamburger-->
+                                        <button
+                                                onclick="toggleHamburgerMain()"
+                                                type="button"
+                                                id="hamburger"
+                                                tabindex="0"
+                                                aria-label="toogle-navigation"
+                                                class="header__hamburger"
+                                        >
+                                                <i class="fas fa-bars"></i>
+                                        </button>
 
-          <!--navigation-->
-          <nav id="nav" class="nav hide-nav">
-            <ul class="nav__ul">
-              <li class="nav__li">
-                <a onclick="toggleHamburger()" href="#main">home</a>
-              </li>
-              <li class="nav__li">
-                <a onclick="toggleHamburger()" href="#projects">projects</a>
-              </li>
-              <li class="nav__li">
-                <a onclick="toggleHamburger()" href="#about">about</a>
-              </li>
-              <li class="nav__li">
-                <a onclick="toggleHamburger()" href="#contact">contact me</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+                                        <!--navigation-->
+                                        <nav id="nav" class="nav hide-nav">
+                                                <ul class="nav__ul">
+                                                        <li class="nav__li">
+                                                                <a onclick="toggleHamburger()" href="#main">home</a>
+                                                        </li>
+                                                        <li class="nav__li">
+                                                                <a onclick="toggleHamburger()" href="#projects"
+                                                                        >projects</a
+                                                                >
+                                                        </li>
+                                                        <li class="nav__li">
+                                                                <a onclick="toggleHamburger()" href="#about">about</a>
+                                                        </li>
+                                                        <li class="nav__li">
+                                                                <a onclick="toggleHamburger()" href="#contact"
+                                                                        >contact me</a
+                                                                >
+                                                        </li>
+                                                </ul>
+                                        </nav>
+                                </header>
 
-        <main id="main" class="main">
-          <!--title-->
-          <section id="title" class="section section--title">
-            <div class="section--title__wrapper">
-              <h1 class="section--title__title">Portfolio</h1>
-              <p class="section--title__paragraph">
-                Hello. My name is Janne. I am a software programmer.
-              </p>
-            </div>
-          </section>
+                                <main id="main" class="main">
+                                        <!--title-->
+                                        <section id="title" class="section section--title">
+                                                <div class="section--title__wrapper">
+                                                        <h1 class="section--title__title">Portfolio</h1>
+                                                        <p class="section--title__paragraph">
+                                                                Hello. My name is Janne. I am a software programmer.
+                                                        </p>
+                                                </div>
+                                        </section>
 
-          <!--projects-->
-          <section id="projects" class="section section--projects">
-            <h2 class="section__title title">projects</h2>
-            <ul class="projects-list">
-              <!--hpo musicians-->
-              <li class="projects-list__item">
-                <div class="project-card">
-                    <h3 class="project-card__title">
-                        HPO Helsinki Philharmonic Orchestra historical concerts
-                    </h3>
-                  <figure class="project-card__figure">
-                    <a
-                      href="https://www.hko-konserttihistoria.fi/"
-                      target="_blank"
-                    >
-                      <img
-                        class="project-card__image"
-                        src="./images/hpo_02.jpg"
-                        alt="App page"
-                      />
-                    </a>
-                  </figure>
-                  <div class="project-card__links">
-                    <a
-                      class="button button--demo"
-                      href="https://www.hko-konserttihistoria.fi/"
-                      target="_blank"
-                      ><span>visit website</span>
-                    </a>
+                                        <!--projects-->
+                                        <section id="projects" class="section section--projects">
+                                                <h2 class="section__title title">projects</h2>
+                                                <ul class="projects-list">
+                                                        <!--hpo musicians-->
+                                                        <li class="projects-list__item">
+                                                                <div class="project-card">
+                                                                        <h3 class="project-card__title">
+                                                                                HPO Helsinki Philharmonic Orchestra
+                                                                                historical concerts
+                                                                        </h3>
+                                                                        <figure class="project-card__figure">
+                                                                                <a
+                                                                                        href="https://www.hko-konserttihistoria.fi/"
+                                                                                        target="_blank"
+                                                                                >
+                                                                                        <img
+                                                                                                class="project-card__image"
+                                                                                                src="./images/hpo_02.jpg"
+                                                                                                alt="App page"
+                                                                                        />
+                                                                                </a>
+                                                                        </figure>
+                                                                        <div class="project-card__links">
+                                                                                <a
+                                                                                        class="button button--demo"
+                                                                                        href="https://www.hko-konserttihistoria.fi/"
+                                                                                        target="_blank"
+                                                                                        ><span>visit website</span>
+                                                                                </a>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
 
-                  </div>
+                                                        <!--Engine3D-->
+                                                        <li class="projects-list__item">
+                                                                <div class="project-card">
+                                                                        <h3 class="project-card__title">
+                                                                                JMF Engine3D
+                                                                        </h3>
+                                                                        <figure class="project-card__figure">
+                                                                                <a
+                                                                                        href="https://github.com/JMFStorm/Engine3D/"
+                                                                                        target="_blank"
+                                                                                >
+                                                                                        <img
+                                                                                                class="project-card__image"
+                                                                                                src="./images/engine_3d.jpg"
+                                                                                                alt="App page"
+                                                                                        />
+                                                                                </a>
+                                                                        </figure>
+                                                                        <div class="project-card__links">
+                                                                                <a
+                                                                                        class="button button--git"
+                                                                                        href="https://github.com/JMFStorm/Engine3D/"
+                                                                                        target="_blank"
+                                                                                >
+                                                                                        <span>view on GitHub</span
+                                                                                        ><em class="fab fa-github"></em>
+                                                                                </a>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+
+                                                        <!--Halls of Hades-->
+                                                        <li class="projects-list__item">
+                                                                <div class="project-card">
+                                                                        <h3 class="project-card__title">
+                                                                                Halls of Hades
+                                                                        </h3>
+                                                                        <figure class="project-card__figure">
+                                                                                <a
+                                                                                        href="https://jannematiasf.itch.io/halls-of-hades"
+                                                                                        target="_blank"
+                                                                                >
+                                                                                        <img
+                                                                                                class="project-card__image"
+                                                                                                src="./images/hades_screenshot02.png"
+                                                                                                alt="App page"
+                                                                                        />
+                                                                                </a>
+                                                                        </figure>
+                                                                        <div class="project-card__links">
+                                                                                <a
+                                                                                        class="button button--demo"
+                                                                                        href="https://jannematiasf.itch.io/halls-of-hades"
+                                                                                        target="_blank"
+                                                                                        ><span>play now</span>
+                                                                                </a>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+                                                </ul>
+                                        </section>
+
+                                        <!--details-->
+                                        <section id="about" class="section section--about">
+                                                <h2 class="section__title title">about me</h2>
+                                                <div class="technologies__wrapper">
+                                                        <div class="technologies">
+                                                                <h3 class="technologies__title">What I'm about:</h3>
+                                                                <ul class="technologies__list">
+                                                                        <li class="technologies__item">
+                                                                                I'm interested in programming game
+                                                                                engine tech and other development tools.
+                                                                        </li>
+                                                                        <li class="technologies__item">
+                                                                                I attempt to make sense of the
+                                                                                convoluted domain of computer science
+                                                                                and try to create simple solutions for
+                                                                                complex problems.
+                                                                        </li>
+                                                                        <li class="technologies__item">
+                                                                                I mostly like to design and develop
+                                                                                tools and libraries for the job on my
+                                                                                own, rather than using pre-existing
+                                                                                (bloated) frameworks and libraries.
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                        <div class="technologies">
+                                                                <h3 class="technologies__title">
+                                                                        Preferred languages:
+                                                                </h3>
+                                                                <ul class="technologies__list">
+                                                                        <li class="technologies__item">
+                                                                                Languages that I mostly use are C and
+                                                                                C++ for game programming, and I've used
+                                                                                C# and JavaScript for other applications
+                                                                                in the past.
+                                                                        </li>
+                                                                        <li class="technologies__item">
+                                                                                Languages that I'm interested in trying
+                                                                                are Odin and Jai languages for game
+                                                                                development, and Go lang for other
+                                                                                general purpose applications.
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </section>
+                                </main>
+
+                                <!--contact footer-->
+                                <footer id="contact" class="footer">
+                                        <h2 class="footer__title">contact me</h2>
+                                        <ul class="contacts-list">
+                                                <li class="contacts-list__item">
+                                                        <h3>Email:</h3>
+                                                        <div class="email-row">
+                                                                <p class="email-row__email" id="email">
+                                                                        jannematiasf@gmail.com
+                                                                </p>
+                                                                <button onclick="copyEmail()">Copy to clipboard</button>
+                                                        </div>
+                                                </li>
+                                        </ul>
+                                        <ul class="links-list">
+                                                <li class="links-list__item">
+                                                        <a
+                                                                class="github-link"
+                                                                href="https://github.com/JMFStorm"
+                                                                target="_blank"
+                                                        >
+                                                                <em class="fab fa-github"></em>
+                                                                <span id="my-github">GitHub</span>
+                                                        </a>
+                                                </li>
+                                                <li class="links-list__item">
+                                                        <a
+                                                                class="github-link"
+                                                                href="https://www.linkedin.com/in/janne-fagerstr%C3%B6m-3135651b5/"
+                                                                target="_blank"
+                                                        >
+                                                                <svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24"
+                                                                        data-supported-dps="24x24"
+                                                                        fill="currentColor"
+                                                                        class="mercado-match"
+                                                                        width="60"
+                                                                        height="60"
+                                                                        focusable="false"
+                                                                >
+                                                                        <path
+                                                                                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                                                                        ></path>
+                                                                </svg>
+                                                                <span id="my-github">LinkedIn</span>
+                                                        </a>
+                                                </li>
+                                        </ul>
+                                </footer>
+                        </div>
                 </div>
-              </li>
 
-              <!--Engine3D-->
-              <li class="projects-list__item">
-                <div class="project-card">
-                  <h3 class="project-card__title">JMF Engine3D</h3>
-                  <figure class="project-card__figure">
-                    <a
-                      href="https://github.com/JMFStorm/Engine3D/"
-                      target="_blank"
-                    >
-                      <img
-                        class="project-card__image"
-                        src="./images/engine_3d.jpg"
-                        alt="App page"
-                      />
-                    </a>
-                  </figure>
-                  <div class="project-card__links">
-
-                    <a
-                      class="button button--git"
-                      href="https://github.com/JMFStorm/Engine3D/"
-                      target="_blank"
-                    >
-                      <span>view on GitHub</span><em class="fab fa-github"></em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--details-->
-          <section id="about" class="section section--about">
-            <h2 class="section__title title">about me</h2>
-            <div class="technologies__wrapper">
-              <div class="technologies">
-                <h3 class="technologies__title">What I'm about:</h3>
-                <ul class="technologies__list">
-                    <li class="technologies__item">
-                        I'm interested in programming game engine tech and other development tools.
-                    </li>
-                    <li class="technologies__item">
-                        I attempt to make sense of the convoluted domain of computer science and try to create simple solutions for complex problems.
-                    </li>
-                    <li class="technologies__item">
-                        I mostly like to design and develop tools and libraries for the job on my own, rather than using pre-existing (bloated) frameworks and libraries.
-                    </li>
-                </ul>
-              </div>
-              <div class="technologies">
-                <h3 class="technologies__title">Preferred languages:</h3>
-                <ul class="technologies__list">
-                    <li class="technologies__item">
-                        Languages that I mostly use are C and C++ for game programming, and I've used C# and JavaScript for other applications in the past.
-                    </li>
-                    <li class="technologies__item">
-                      Languages that I'm interested in trying are Odin and Jai languages for game development, and Go lang for other general purpose applications.
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </main>
-
-        <!--contact footer-->
-        <footer id="contact" class="footer">
-          <h2 class="footer__title">contact me</h2>
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <h3>Email:</h3>
-              <div class="email-row">
-                <p class="email-row__email" id="email">
-                  jannematiasf@gmail.com
-                </p>
-                <button onclick="copyEmail()">Copy to clipboard</button>
-              </div>
-            </li>
-          </ul>
-          <ul class="links-list">
-            <li class="links-list__item">
-              <a class="github-link" href="https://github.com/JMFStorm" target="_blank">
-                  <em class="fab fa-github"></em>
-                  <span id="my-github">GitHub</span>
-              </a>
-            </li>
-            <li class="links-list__item">
-              <a class="github-link" href="https://www.linkedin.com/in/janne-fagerstr%C3%B6m-3135651b5/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="60" height="60" focusable="false">
-                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                </svg>
-                <span id="my-github">LinkedIn</span>
-              </a>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
-
-    <!--script-->
-    <script src="./js/script.js"></script>
-  </body>
+                <!--script-->
+                <script src="./js/script.js"></script>
+        </body>
 </html>
